@@ -13,6 +13,8 @@ PR with a cool fix or feature!
 
 - Style views with default materialize components
 - Add extra demos of materialize functionality
+- exclude node_modules from build, replace with assets/vendor or something
+- set up main js and initialize materialize js
 - Update screenshot
 - Publish to Ruby Gems
 

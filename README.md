@@ -18,11 +18,9 @@ PR with a cool fix or feature!
 - Update screenshot
 - Publish to Ruby Gems
 
-> *Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
+> ***Minima** is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
 
-> Created and designed by Gowhy not release a bootstrap that other's can work with before hacking in my own code. Enjoy, and feel free to send in a PR with a cool fix or feature!gle, Material Design is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.
-
-[Theme preview](https://jekyll.github.io/minimaterialize/)
+> Created and designed by Google, **Material Design** is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.
 
 ![minima theme preview](/screenshot.png)
 
@@ -240,7 +238,7 @@ show_excerpts: true
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minimaterialize. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/sh78/minimaterialize. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 

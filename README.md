@@ -13,6 +13,7 @@ PR with a cool fix or feature!
 
 - Style views with default materialize components
 - Add extra demos of materialize functionality
+- Update screenshot
 - Publish to Ruby Gems
 
 > *Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.

@@ -1,8 +1,25 @@
-# minima
+# minimaterialize
 
-*Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
+**WARNING:** Work in progress.
 
-[Theme preview](https://jekyll.github.io/minima/)
+This is a fork of the [default Jekyll starter
+theme](https://github.com/jekyll/minimaterialize), wired up with the [Materialize CSS
+framework](https://materializecss.com/) by Google. I wanted to build a Jekyll
+blog with Material Design, and figured why not release a bootstrap that other's
+can work with before hacking in my own code. Enjoy, and feel free to send in a
+PR with a cool fix or feature!
+
+**TODO:** 
+
+- Style views with default materialize components
+- Add extra demos of materialize functionality
+- Publish to Ruby Gems
+
+> *Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
+
+> Created and designed by Gowhy not release a bootstrap that other's can work with before hacking in my own code. Enjoy, and feel free to send in a PR with a cool fix or feature!gle, Material Design is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.
+
+[Theme preview](https://jekyll.github.io/minimaterialize/)
 
 ![minima theme preview](/screenshot.png)
 
@@ -11,19 +28,31 @@
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "minima"
+gem "minimaterialize"
 ```
 
 And add this line to your Jekyll site:
 
 ```yaml
-theme: minima
+theme: minimaterialize
 ```
 
 And then execute:
 
     $ bundle
 
+
+## Updating
+
+Minima theme:
+
+    git remote add source https://github.com/jekyll/minima
+    git fetch --all
+    git merge source/master
+
+Materialize CSS:
+
+    npm update --save materialize-css
 
 ## Contents At-A-Glance
 
@@ -63,6 +92,9 @@ Refers to various asset files within the `assets` directory.
 Contains the `main.scss` that imports sass files from within the `_sass` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `_layouts/default.html` via `_includes/head.html`.
 
 This directory can include sub-directories to manage assets of similar type, and will be copied over as is, to the final transformed site directory.
+
+To make managing Materialize CSS nice, it is included as an npm package. The
+path to it is set up in *_config.yml* under `sass:`.
 
 ### Plugins
 
@@ -205,7 +237,7 @@ show_excerpts: true
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minimaterialize. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 

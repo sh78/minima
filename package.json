@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/sh78/minimaterialize/issues"
   },
-  "homepage": "https://github.com/sh78/minimaterialize#readme"
+  "homepage": "https://github.com/sh78/minimaterialize#readme",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.1"
+  }
 }

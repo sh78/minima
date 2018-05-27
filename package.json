@@ -1,0 +1,28 @@
+{
+  "name": "minimaterialize",
+  "version": "1.0.0",
+  "description": "The Jekyll starter theme reworked for the Materialize framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh78/minimaterialize.git"
+  },
+  "keywords": [
+    "jekyll",
+    "material",
+    "materialize",
+    "blog",
+    "static",
+    "responsive",
+    "sass"
+  ],
+  "author": "Sean Henderson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sh78/minimaterialize/issues"
+  },
+  "homepage": "https://github.com/sh78/minimaterialize#readme"
+}

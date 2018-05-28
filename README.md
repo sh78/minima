@@ -3,7 +3,7 @@
 **WARNING:** Work in progress.
 
 This is a fork of the [default Jekyll starter
-theme](https://github.com/jekyll/minimaterialize), wired up with the [Materialize CSS
+theme](https://github.com/jekyll/minima), wired up with the [materialize css
 framework](https://materializecss.com/) by Google. I wanted to build a Jekyll
 blog with Material Design, and figured why not release a bootstrap that other's
 can work with before hacking in my own code. Enjoy, and feel free to send in a
@@ -35,7 +35,7 @@ gem "minimaterialize"
 And add this line to your Jekyll site:
 
 ```yaml
-theme: minimaterialize
+theme: minimaterializeterialize
 ```
 
 And then execute:
@@ -109,13 +109,13 @@ Minima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) p
 
 #### Main Heading and Content-injection
 
-From Minima v2.2 onwards, the *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *We recommended that you title this section with a Heading2 (`##`)*.
+From minima v2.2 onwards, the *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *We recommended that you title this section with a Heading2 (`##`)*.
 
 Usually the `site.title` itself would suffice as the implicit 'main-title' for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a `title` variable in the document's front matter and it will be rendered with an `<h1>` tag.
 
 #### Post Listing
 
-This section is optional from Minima v2.2 onwards.<br/>
+This section is optional from minima v2.2 onwards.<br/>
 It will be automatically included only when your site contains one or more valid posts or drafts (if the site is configured to `show_drafts`).
 
 The title for this section is `Posts` by default and rendered with an `<h2>` tag. You can customize this heading by defining a `list_title` variable in the document's front matter.
@@ -124,22 +124,23 @@ The title for this section is `Posts` by default and rendered with an `<h2>` tag
 
 ### Customization
 
-To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
-e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
+To override the default structure and style of minimaterialize, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
+e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minimaterialize gem folder to `<yoursite>/_includes` and start editing that file.
 
-The site's default CSS has now moved to a new place within the gem itself, [`assets/main.scss`](assets/main.scss). To **override the default CSS**, the file has to exist at your site source. Do either of the following:
-- Create a new instance of `main.scss` at site source.
-  - Create a new file `main.scss` at `<your-site>/assets/`
-  - Add the frontmatter dashes, and
-  - Add `@import "minima";`, to `<your-site>/assets/main.scss`
-  - Add your custom CSS.
-- Download the file from this repo
-  - Create  a new file `main.scss` at `<your-site>/assets/`
-  - Copy the contents at [assets/main.scss](assets/main.scss) onto the `main.scss` you just created, and edit away!
-- Copy directly from Minima 2.0 gem
-  - Go to your local minima gem installation directory ( run `bundle show minima` to get the path to it ).
-  - Copy the `assets/` folder from there into the root of `<your-site>`
-  - Change whatever values you want, inside `<your-site>/assets/main.scss`
+#### Styles
+
+Each individula materialize sass component is included separately in
+`_sass/main.scss`. To reduce unused css, you can comment out or delete the
+components you are not using.
+
+Materialize CSS already has an excellent set of variables that are configured to be
+[easily overridden](https://materializecss.com/sass.html). These variables use
+the sass `!default` declaration, which thoughtbot explains succinctly
+[here](https://robots.thoughtbot.com/sass-default).
+
+To start hacking the design, open up `_sass/_variables.scss` and change anything
+you want. When the Materialize source sass components are loaded, they will see
+what you set and skip the default value.
 
 --
 
@@ -163,7 +164,7 @@ You can change the default date format by specifying `site.minima.date_format`
 in `_config.yml`.
 
 ```
-# Minima date format
+# minimaterialize date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"

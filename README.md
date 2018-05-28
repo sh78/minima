@@ -80,12 +80,21 @@ Refers to snippets of code within the `_includes` directory that can be inserted
 
 ### Sass
 
-Refers to `.scss` files within the `_sass` directory that define the theme's styles.
+The minima styles have been totally removed in favor of Materialize.
+see `_sass/main.scss` to control what's included and add your own. 
 
-  - `minima.scss` &mdash; The core file imported by preprocessed `main.scss`, it defines the variable defaults for the theme and also further imports sass partials to supplement itself.
-  - `minima/_base.scss` &mdash; Resets and defines base styles for various HTML elements.
-  - `minima/_layout.scss` &mdash; Defines the visual style for various layouts.
-  - `minima/_syntax-highlighting.scss` &mdash; Defines the styles for syntax-highlighting.
+To make managing Materialize CSS nice, it is included as an npm package. The
+path to it is set up in *_config.yml* under `sass:`.
+
+```yaml
+sass:
+  load_paths:
+    - _sass
+    - node_modules/materialize-css/sass
+```
+
+If you want to use another npm package that has styles, you can just add its
+load path to the above.
 
 ### Assets
 
@@ -93,9 +102,6 @@ Refers to various asset files within the `assets` directory.
 Contains the `main.scss` that imports sass files from within the `_sass` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `_layouts/default.html` via `_includes/head.html`.
 
 This directory can include sub-directories to manage assets of similar type, and will be copied over as is, to the final transformed site directory.
-
-To make managing Materialize CSS nice, it is included as an npm package. The
-path to it is set up in *_config.yml* under `sass:`.
 
 ### Plugins
 

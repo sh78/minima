@@ -35,7 +35,7 @@ gem "minimaterialize"
 And add this line to your Jekyll site:
 
 ```yaml
-theme: minimaterializeterialize
+theme: minimaterialize
 ```
 
 And then execute:

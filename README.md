@@ -156,6 +156,19 @@ header_pages:
   - portfolio.md
 ```
 
+#### Icons
+
+Add an `icon` definition to the front matter of a page to show that icon next to
+the link in the navigation. For example, as depicted in `about.md`:
+
+```yaml
+layout: page
+title: About
+icon: fingerprint
+```
+
+Search the available icons at [https://material.io/tools/icons/](https://material.io/tools/icons/).
+
 --
 
 ### Change default date format

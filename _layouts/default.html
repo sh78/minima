@@ -7,15 +7,14 @@
 
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <main class="page-content container" aria-label="Content">
+      {{ content }}
     </main>
 
     {%- include footer.html -%}
 
     <script src="{{'/node_modules/materialize-css/dist/js/materialize.min.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'assets/javascript/main.js' | prepend: site.baseurl}}"></script>
 
   </body>
 

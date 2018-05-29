@@ -8,6 +8,8 @@ framework](https://materializecss.com/) by Google. I wanted to build a Jekyll bl
 
 > Created and designed by Google, **Material Design** is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.
 
+[Check out a demo here](https://sh78.github.io/minimaterialize/).
+
 ![minima theme preview](/screenshot.png)
 
 ## Installation

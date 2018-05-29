@@ -256,6 +256,13 @@ To display post-excerpts on the Home Page, simply add the following to your `_co
 show_excerpts: true
 ```
 
+The Materialize `truncate` class is used in `_layouts/home.html` to keep things
+tidy. You can disable this by setting:
+
+```yaml
+truncate_excerpts: false
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/sh78/minimaterialize. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.

@@ -38,6 +38,7 @@ rss: rss
 
 # General options
 show_excerpts: true # set to true to show excerpts on the homepage
+truncate_excerpts: true # set to true to show excerpts on the homepage
 post_columns: true # set to false to use a simple one column layout
 post_cards: true
 post_images: false

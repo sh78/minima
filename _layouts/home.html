@@ -35,7 +35,7 @@ layout: default
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <span class="post-meta grey-text">{{ post.date | date: date_format }}</span>
             {%- if site.show_excerpts -%}
-            <p class="truncate">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+            <p class="{%- if site.truncate_excerpts -%}truncate{%- endif -%}">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
             {%- endif -%}
           </div>
         </div>

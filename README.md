@@ -37,7 +37,6 @@ theme: minimaterialize
 And then execute:
 
 ```shell
-npm install
 bundle install
 ```
 
@@ -81,18 +80,7 @@ Refers to snippets of code within the `_includes` directory that can be inserted
 The minima styles have been totally removed in favor of Materialize.
 see `_sass/main.scss` to control what's included and add your own. 
 
-To make managing Materialize CSS nice, it is included as an npm package. The
-path to it is set up in *_config.yml* under `sass:`.
-
-```yaml
-sass:
-  load_paths:
-    - _sass
-    - node_modules/materialize-css/sass
-```
-
-If you want to use another npm package that has styles, you can just add its
-load path to the above.
+`script/build` copies the materialize assets into `_sass/`.
 
 ### Assets
 
@@ -133,11 +121,11 @@ help you understand what's going on behind the scenes and how to customize your
 site.**
 
 To override the default structure and style of minimaterialize, create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
-e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minimaterialize gem folder to `<yoursite>/_includes` and start editing that file.
+e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` dirsimply ectory, copy `_includes/head.html` from minimaterialize gem folder to `<yoursite>/_includes` and start editing that file.
 
 #### Styles
 
-Each individula materialize sass component is included separately in
+Each individual materialize sass component is included separately in
 `_sass/main.scss`. To reduce unused css, you can comment out or delete the
 components you are not using.
 

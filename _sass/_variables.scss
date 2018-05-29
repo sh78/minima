@@ -39,7 +39,7 @@ $primary-color: color("blue-grey", "darken-1");
 $primary-color-light: lighten($primary-color, 15%);
 $primary-color-dark: darken($primary-color, 15%);
 
-$secondary-color: color("teal", "lighten-1");
+$secondary-color: color("light-blue", "lighten-1");
 $success-color: color("green", "base");
 $error-color: color("red", "base");
 $link-color: color("light-blue", "darken-1");
@@ -91,7 +91,7 @@ $button-flat-disabled-color: lighten(#999, 10%);
 
 // Floating buttons
 $button-floating-background: $secondary-color;
-$button-floating-background-hover: $button-floating-background;
+$button-floating-background-hover: darken($button-floating-background, 10%);
 $button-floating-color: #fff;
 $button-floating-size: 40px;
 $button-floating-radius: 50%;

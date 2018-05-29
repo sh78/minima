@@ -36,8 +36,10 @@ rss: rss
 #   instance: example.com
 
 
+# Site page options
 show_excerpts: false # set to true to show excerpts on the homepage
-post_columns: true
+post_columns: true # set to false to use a simple one column layout
+home_posts_title: false # set to true to show the title on the home page
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this

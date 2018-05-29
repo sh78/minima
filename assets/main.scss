@@ -57,6 +57,25 @@
 
 /* Main Styles */
 
+// Links
+.page-content {
+  a {
+    &:hover {
+      color: darken($link-color, 10%);
+    }
+  }
+}
+
+.page-header, .page-footer {
+  a {
+    color: color("light-blue", "lighten-4");
+
+    &:hover {
+      color: color("light-blue", "lighten-5");
+    }
+  }
+}
+
 // Touch up the main post listing layout
 .post-listing {
   .row {

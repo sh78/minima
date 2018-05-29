@@ -53,7 +53,7 @@
 
 /* Main Styles */
 
-// Touch up the main post listing
+// Touch up the main post listing layout
 .post-listing {
   .row {
     margin-bottom: 0;
@@ -63,6 +63,10 @@
     @media #{$medium-and-up} {
       margin-bottom: 35px;
     }
+  }
+
+  .card-title {
+    margin-top: 0;
   }
 }
 // 2-coloumn grid of cards that fill empty vertical space

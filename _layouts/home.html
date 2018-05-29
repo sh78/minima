@@ -12,15 +12,15 @@ layout: default
   {%- if site.posts.size > 0 -%}
   <div class="post-listing">
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <div class="row fill-height">
+    <div class="row{% if site.post_columns %} fill-height{% endif %}">
       {%- for post in site.posts -%}
-        <div class="col s12 m6">
+        <div class="col s12{% if site.post_columns %} m6{% endif %}">
           <div class="card">
-            <div class="card-image">
-              {% comment %} <img src="images/sample-1.jpg"> {% endcomment %}
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">visibility</i></a>
-            </div>
+            {% comment %} <div class="card-image"> {% endcomment %}
+            {% comment %}   <img src="images/sample-1.jpg"> {% endcomment %}
+            {% comment %} </div> {% endcomment %}
             <div class="card-content">
+              <a class="btn-floating halfway-fab waves-effect waves-light red" href="{{ post.url | relative_url }}"><i class="material-icons">subdirectory_arrow_right</i></a>
               <h3 class="card-title">
                 <a class="post-link" href="{{ post.url | relative_url }}">
                   {{ post.title | escape }}
@@ -36,10 +36,12 @@ layout: default
             </div>
           </div>
         </div>
-        {%- assign the_index_even = forloop.index | modulo: 2 -%}
-        {%- if the_index_even == 0 -%}
-          </div>
-          <div class="row fill-height">
+        {%- if site.post_columns -%}
+          {%- assign the_index_even = forloop.index | modulo: 2 -%}
+          {%- if the_index_even == 0 -%}
+            </div>
+            <div class="row fill-height">
+          {%- endif -%}
         {%- endif -%}
       {%- endfor -%}
     </div>

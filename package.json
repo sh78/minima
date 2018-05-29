@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/sh78/minimaterialize#readme",
   "dependencies": {
-    "materialize-css": "^1.0.0-rc.1"
+    "materialize-css": "^1.0.0-rc.1",
+    "npm": "^6.1.0"
   }
 }

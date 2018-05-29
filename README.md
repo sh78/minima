@@ -128,7 +128,11 @@ The title for this section is `Posts` by default and rendered with an `<h2>` tag
 
 ### Customization
 
-To override the default structure and style of minimaterialize, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
+**Reading [Jekyll's theme documentation](https://jekyllrb.com/docs/themes/) will
+help you understand what's going on behind the scenes and how to customize your
+site.**
+
+To override the default structure and style of minimaterialize, create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
 e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minimaterialize gem folder to `<yoursite>/_includes` and start editing that file.
 
 #### Styles

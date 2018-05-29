@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "minimaterialize"
-  spec.version       = "1.0.1"
+  spec.version       = "1.1.0"
   spec.authors       = ["Sean Henderson"]
   spec.email         = ["mail@sean.sh"]
 
@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.metadata["plugin_type"] = "theme"
 
   spec.files = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
+    f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README|package)((\.(txt|md|markdown|json)|$)))!i)
   end
 
   spec.add_runtime_dependency "jekyll", "~> 3.5"

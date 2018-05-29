@@ -12,6 +12,8 @@ CSS](https://materializecss.com/). It stands to reason that the
 [form](https://materializecss.com/autocomplete.html) and
 [mobile](https://materializecss.com/mobile.html) stuff will work, too.
 
+*P.S.* [Font Awesome](https://fontawesome.com/icons?d=gallery) is awesome, so we got that too.
+
 <a class="waves-effect waves-light btn-large modal-trigger" href="#modal1"><i class="material-icons right">sentiment_very_satisfied</i>Cheers!</a>
 
 <!-- Modal Structure -->

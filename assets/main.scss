@@ -50,3 +50,33 @@
 @import "components/pulse";
 @import "components/datepicker";
 @import "components/timepicker";
+
+/* Main Styles */
+
+// Touch up the main post listing
+.post-listing {
+  .row {
+    margin-bottom: 0;
+  }
+  .col {
+    margin-bottom: 20px;
+    @media #{$medium-and-up} {
+      margin-bottom: 35px;
+    }
+  }
+}
+// 2-coloumn grid of cards that fill empty vertical space
+@media #{$medium-and-up} {
+  .fill-height {
+    display: flex;
+    margin-bottom: 35px;
+
+    > .col {
+      flex: 1 1 auto;
+
+      .card {
+        height: 100%;
+      }
+    }
+  }
+}

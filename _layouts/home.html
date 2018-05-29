@@ -4,31 +4,49 @@ layout: default
 
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
+  <div class="post-listing">
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
+    <div class="row fill-height">
       {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              {% comment %} <img src="images/sample-1.jpg"> {% endcomment %}
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">visibility</i></a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+              </h3>
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              {%- if site.show_excerpts -%}
+              <p>
+                {{ post.excerpt }}
+              </p>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+        {%- assign the_index_even = forloop.index | modulo: 2 -%}
+        {%- if the_index_even == 0 -%}
+          </div>
+          <div class="row fill-height">
         {%- endif -%}
-      </li>
       {%- endfor -%}
-    </ul>
+    </div>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  </div>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 
 </div>

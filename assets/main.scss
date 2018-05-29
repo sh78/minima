@@ -84,3 +84,8 @@
     }
   }
 }
+
+// fix awkward lack of padding at the bottom of a post/page
+.post-content, .page-content {
+  margin-bottom: 30px;
+}

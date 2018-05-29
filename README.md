@@ -248,7 +248,7 @@ Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
 
 --
 
-### Enabling Excerpts on the Home Page
+### Home Page Options
 
 To display post-excerpts on the Home Page, simply add the following to your `_config.yml`:
 
@@ -261,6 +261,25 @@ tidy. You can disable this by setting:
 
 ```yaml
 truncate_excerpts: false
+```
+
+To use Materialize `.card`s for each listed post, set:
+
+```yaml
+post_cards: true
+```
+
+To use a fancy two-column layout on larger screens:
+
+```yaml
+post_columns: true
+```
+
+To use the Materialize card with image, set the following and make sure the post
+has `image:` set to a relative image path in the front matter.
+
+```yaml
+post_images: true
 ```
 
 ## Contributing

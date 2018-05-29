@@ -1,18 +1,8 @@
 # Minimaterialize
 
-**WARNING:** Work in progress.
-
 This is a fork of the [default Jekyll starter
 theme](https://github.com/jekyll/minima), wired up with the [materialize css
-framework](https://materializecss.com/) by Google. I wanted to build a Jekyll
-blog with Material Design, and figured why not release a bootstrap that other's
-can work with before hacking in my own code. Enjoy, and feel free to send in a
-PR with a cool fix or feature!
-
-**TODO:** 
-
-- exclude node_modules from build, replace with assets/vendor or something
-- Update screenshot
+framework](https://materializecss.com/) by Google. I wanted to build a Jekyll blog with Material Design, and figured why not release a bootstrap that other's can work with before hacking in my own code. Enjoy, and feel free to send in a PR with a cool fix or feature!
 
 > ***Minima** is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
 

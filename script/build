@@ -7,5 +7,6 @@ echo "Building the example site..."
 # copy the sass components from materialize npm package
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cp -r $DIR/../node_modules/materialize-css/sass/components $DIR/../_sass
+cp -r $DIR/../node_modules/materialize-css/dist/js/materialize.min.js $DIR/../assets/javascript/
 
 bundle exec jekyll build

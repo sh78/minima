@@ -1,4 +1,4 @@
-# minimaterialize
+# Minimaterialize
 
 **WARNING:** Work in progress.
 
@@ -11,7 +11,6 @@ PR with a cool fix or feature!
 
 **TODO:** 
 
-- Add extra demos of materialize functionality
 - exclude node_modules from build, replace with assets/vendor or something
 - Update screenshot
 
@@ -23,13 +22,13 @@ PR with a cool fix or feature!
 
 ## Installation
 
-Add this line to your Jekyll site's Gemfile:
+Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
 gem "minimaterialize"
 ```
 
-And add this line to your Jekyll site:
+And add this line to your Jekyll site:'s `_config.yml`:
 
 ```yaml
 theme: minimaterialize
@@ -37,8 +36,10 @@ theme: minimaterialize
 
 And then execute:
 
-    $ bundle
-
+```shell
+npm install
+bundle install
+```
 
 ## Updating
 
